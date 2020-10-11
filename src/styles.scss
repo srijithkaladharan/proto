@@ -1,1 +1,48 @@
 /* You can add global styles to this file, and also import other style files */
+
+html, body { 
+    height: 100%; 
+}
+body { 
+    margin: 0; 
+    font-family: Roboto, "Helvetica Neue", sans-serif; 
+
+    display: grid;
+    // justify-items: center;
+    // align-items: center;
+    background-color: white;
+}
+
+#logo-container img {
+    height: 30%;
+    width: 30%;
+    display: block;
+    margin: auto;
+}
+
+// ANGULAR MATERIAL CUSTOMIZATION
+
+mat-toolbar {
+    background-color: yellow;
+}
+
+mat-dialog-container#modal-component {
+    border: 3px solid grey;
+    border-radius: 11px;
+    background-color: white;
+}
+
+mat-card {
+    width: 50%;
+    margin: 1rem auto;
+}
+
+mat-form-field,
+textarea {
+    width: 100%;
+    margin-bottom: 1rem;
+}
+
+button#login-btn{
+    color: #e65f41;
+}
