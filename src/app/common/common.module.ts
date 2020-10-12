@@ -1,4 +1,4 @@
-import { NgModule } from '@angular/core';
+import { InjectionToken, NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { FormsModule } from '@angular/forms';
 
@@ -18,7 +18,7 @@ import { MatToolbarModule } from '@angular/material/toolbar';
 import { MatCardModule } from '@angular/material/card';
 import { MatFormFieldModule } from '@angular/material/form-field';
 import { MatInputModule } from '@angular/material/input';
-
+import { MatMenuModule } from '@angular/material/menu';
 
 @NgModule({
   declarations: [
@@ -27,7 +27,7 @@ import { MatInputModule } from '@angular/material/input';
     ForgotPasswordComponent,
     HeaderComponent,
     LayoutComponent,
-    LogoutModalComponent
+    LogoutModalComponent,
   ],
   imports: [
     FormsModule,
@@ -39,7 +39,12 @@ import { MatInputModule } from '@angular/material/input';
     MatToolbarModule,
     MatCardModule,
     MatFormFieldModule,
-    MatInputModule
+    MatInputModule,
+    MatMenuModule,
+  ],
+  providers: [
+    // MatMenuTrigger
+    // { provide: MatMenuTrigger, useFactory: MAT_MENU_SCROLL_STRATEGY_FACTORY, deps: [Overlay] }
   ]
 })
 export class AppCommonModule { }

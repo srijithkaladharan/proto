@@ -7,6 +7,7 @@ import { ViewCourseComponent } from '../pages/view-course/view-course.component'
 import { CourseListComponent } from '../pages/course-list/course-list.component';
 import { CreateCourseComponent } from '../pages/create-course/create-course.component';
 
+import { SharedModule } from './../shared/shared.module';
 
 @NgModule({
   declarations: [
@@ -16,8 +17,9 @@ import { CreateCourseComponent } from '../pages/create-course/create-course.comp
     CreateCourseComponent,
   ],
   imports: [
-    // CommonModule,
-    PageRoutingModule
+    CommonModule,
+    PageRoutingModule,
+    SharedModule
   ]
 })
 export class PageModule { }

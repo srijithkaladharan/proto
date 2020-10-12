@@ -20,15 +20,18 @@ export class HeaderComponent implements OnInit {
 
     dialogConfig.disableClose = true;
     dialogConfig.id = "modal-component";
-    dialogConfig.height = "350px";
-    dialogConfig.width = "600px";
+    dialogConfig.height = "250px";
+    dialogConfig.width = "400px";
 
     const modalDialog = this.matDialog.open(LogoutModalComponent, dialogConfig);
   }
 
   goToLogin() {
     this.router.navigate(['/login']);
-    console.log("Login Clicked!!");
+  }
+
+  goToPage(pageName: string) {
+    this.router.navigate[pageName];
   }
 
 }

@@ -1,5 +1,8 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
+
+import { ChartsModule } from 'ng2-charts';
+
 import { BarChartComponent } from './charts/bar-chart/bar-chart.component';
 import { BubbleChartComponent } from './charts/bubble-chart/bubble-chart.component';
 import { LineChartComponent } from './charts/line-chart/line-chart.component';
@@ -9,9 +12,25 @@ import { DoughnutChartComponent } from './charts/doughnut-chart/doughnut-chart.c
 
 
 @NgModule({
-  declarations: [BarChartComponent, BubbleChartComponent, LineChartComponent, PieChartComponent, RadarChartComponent, DoughnutChartComponent],
+  declarations: [
+    BarChartComponent,
+    BubbleChartComponent,
+    LineChartComponent,
+    PieChartComponent,
+    RadarChartComponent,
+    DoughnutChartComponent
+  ],
   imports: [
-    CommonModule
+    CommonModule,
+    ChartsModule
+  ],
+  exports: [
+    BarChartComponent,
+    BubbleChartComponent,
+    LineChartComponent,
+    PieChartComponent,
+    RadarChartComponent,
+    DoughnutChartComponent
   ]
 })
 export class SharedModule { }

@@ -1,15 +1,20 @@
 import { Component, OnInit } from '@angular/core';
+import { ChartType } from 'chart.js';
+import { MultiDataSet, Label } from 'ng2-charts';
 
 @Component({
-  selector: 'app-doughnut-chart',
+  selector: 'doughnut-chart',
   templateUrl: './doughnut-chart.component.html',
   styleUrls: ['./doughnut-chart.component.scss']
 })
-export class DoughnutChartComponent implements OnInit {
+export class DoughnutChartComponent {
 
-  constructor() { }
+  doughnutChartLabels: Label[] = ['BMW', 'Ford', 'Volks Wagen'];
 
-  ngOnInit(): void {
-  }
+  doughnutChartData: MultiDataSet = [
+    [55, 25, 20]
+  ];
+
+  doughnutChartType: ChartType = 'doughnut';
 
 }

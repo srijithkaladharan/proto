@@ -10,15 +10,15 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MatButtonModule } from '@angular/material/button';
 import { MatDialogModule } from '@angular/material/dialog';
 import { MatToolbarModule } from '@angular/material/toolbar';
+import { MatMenuModule } from '@angular/material/menu';
+
 
 import { UtilsModule } from './utils/utils.module';
-import { BarChartComponent } from './shared/bar-chart/bar-chart.component';
 
 
 @NgModule({
   declarations: [
     AppComponent,
-    BarChartComponent,
     // HeaderComponent,
   ],
   imports: [
@@ -30,6 +30,7 @@ import { BarChartComponent } from './shared/bar-chart/bar-chart.component';
     MatButtonModule,
     MatDialogModule,
     MatToolbarModule,
+    MatMenuModule,
     UtilsModule
   ],
   providers: [],

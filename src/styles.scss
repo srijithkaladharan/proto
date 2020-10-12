@@ -3,6 +3,7 @@
 html, body { 
     height: 100%; 
 }
+
 body { 
     margin: 0; 
     font-family: Roboto, "Helvetica Neue", sans-serif; 
@@ -11,13 +12,6 @@ body {
     // justify-items: center;
     // align-items: center;
     background-color: white;
-}
-
-#logo-container img {
-    height: 30%;
-    width: 30%;
-    display: block;
-    margin: auto;
 }
 
 // ANGULAR MATERIAL CUSTOMIZATION
@@ -32,7 +26,7 @@ mat-dialog-container#modal-component {
     background-color: white;
 }
 
-mat-card {
+mat-card{
     width: 50%;
     margin: 1rem auto;
 }
@@ -43,6 +37,34 @@ textarea {
     margin-bottom: 1rem;
 }
 
+button.mat-menu-item {
+    border: none;
+}
+
+//Custom Bootstrap
+.col {
+    margin-top: 1rem;
+    margin-bottom: 3rem;
+    padding-right: 3rem;
+}
+
+
+// Custom Styling
+#logo-container img {    //loginComponent
+    height: 30%;
+    width: 30%;
+    display: block;
+    margin: auto;
+}
+
 button#login-btn{
     color: #e65f41;
 }
+
+.chart-wrapper {   
+    width: 100%;
+ }
+
+ .mat-button-focus-overlay{
+    border: none;
+ }
